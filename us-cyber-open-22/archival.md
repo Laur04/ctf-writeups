@@ -107,7 +107,7 @@ int main(int argc, char **argv) {
 
 Looking at the `main` function of `extract.c` above (with some lines omitted for brevity), we see that the number of files and the offsets used to find the files are defined in the header of `arc.bin`.
 
-`
+```
 00000000   04 00 00 00  6A B7 06 00  3A A6 06 00  CF A8 06 00  20 00 00 00  62 53 68 F4  D6 40 25 9C  ....j...:....... ...bSh..@%.
 0000001C   E6 BC 05 82  17 A6 06 00  E1 91 79 65  65 68 61 77  2E 70 6E 67  00 C1 68 D6  AF 9B EC 9B  ..........yeehaw.png..h.....
 00000038   FB 91 E1 9C  E1 D9 A8 C3  A5 91 E1 B1  E2 91 E1 4D  E3 93 E9 91  E1 01 E1 D2  D4 91 08 91  ...............M............
