@@ -123,4 +123,4 @@ Opening up `arc.bin` in `hexedit`, we see the number of files (`04 00 00 00`), f
 
 The ASCII for `flag.png` starts at `0F B1 0D 00`. However, when looking at the offset for the first file, `yeehaw.png`, we see that the ASCII actully appears 6 bytes after the offset indicates. That is, "yeehaw.png" is at `26 00 00 00`, but the offset for that file indicates `20 00 00 00`. So we need to adjust the offset for `flag.png` to be `09 B1 0D 00`.
 
-Replacing `6A B7 06 00` with `09 B1 0D 00` and the re-running `extract` gives us a file called `flag.txt`, which, when we use `strings` on it, spits out "l05t_buT_n0t_f0rGotT3n_18a9b735". Wrap that in uscg{...} and we've got our flag!
+Replacing `6A B7 06 00` with `09 B1 0D 00` and the re-running `extract` gives us a file called `flag.png`, which, when we use `strings` on it, spits out "l05t_buT_n0t_f0rGotT3n_18a9b735". Wrap that in uscg{...} and we've got our flag!
